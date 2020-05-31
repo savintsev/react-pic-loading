@@ -1,0 +1,145 @@
+.historypage {
+    margin: 0;
+}
+
+.historypage__header {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.historypage__back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px 0 0;
+}
+.historypage__back > svg {
+    fill: rgba(0, 0, 0, 0.54);
+}
+
+.historypage__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1em;
+    color: #707070;
+}
+
+.historyitems {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.historyitems__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.historyitems__item {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.historyitems__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.historyitems__media {
+    position: relative;
+    margin: 0;
+}
+
+.historyitems__pic {
+    display: block;
+    width: 169px;
+    height: 88px;
+    margin: 0;
+    object-fit: cover;
+}
+
+.historyitems__delete {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: rgba(255, 255, 255, 0.54);
+    cursor: pointer;
+}
+.historyitems__delete > svg {
+    fill: rgba(0, 0, 0, 0.54);
+}
+
+.historyitems__data {
+    margin: 0 0 0 27px;
+    padding: 0;
+    color: #707070;
+}
+
+.historyitems__title {
+    margin: 0 0 5px;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.historyitems__date {
+    margin: 0;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px 0 0;
+}
+
+.pagination__button {
+    transition: all .3s ease;
+    margin: 0;
+    padding: 9px 15px 8px;
+    border: 0;
+    border-radius: 2px;
+    outline: 0;
+    box-shadow: 0px 2px 2px #0000003D;
+    background: #006896;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+}
+.pagination__button:hover {
+    background: #005b96;
+    box-shadow: 0px 2px 4px #0000003D;
+}
+.pagination__button:focus {
+    background: #004f96;
+}
+.pagination__button:active {
+    background: #004f96;
+}
+.pagination__button[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.pagination__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.pagination__item {
+    margin: 0 5px;
+}
